@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import styled from 'styled-components';
 
@@ -8,45 +10,48 @@ const Footer = () => {
         <Con>
             <FirstRow>
                 <div className='first'>
-                    <h4>TPL TrinityPact</h4>
-                    <p className='first-p'>
-                        TPL Trinitypact Limited is a recognized real estate firm
-                        registered with the Corporate Affairs Commission
-                        in Nigeria. We provide low-cost housing in high-brow areas
-                        to our investors.
-                    </p>
-                    <div className='soc flex my-3 items-center'>
-                        <a href='https://www.facebook.com/profile.php?id=100071851962525&sfnsn=scwspwa&mibextid=RUbZ1f'><img className="mr-5 cursor-pointer" src="/images/components/fb.svg" alt="img" /></a>
-                        <a href='https://www.instagram.com/trinitypact1?utm_source=qr&igsh=ZHV0eGhiaWpnZXU='><img className="mr-5 cursor-pointer" src="/images/components/insta.svg" alt="img" /> </a>
+                    <div className='mb-10'><img src="/images/components/flogo.png" alt="img" /></div>
+                    <div className='mb-10'>
+                        <p>Get it on</p>
+                        <div><img src="/images/components/fps.png" alt="img" /></div>
+                    </div>
+                    <div className='mb-10'>
+                        <p>Available on the</p>
+                        <div><img src="/images/components/fas.png" alt="img" /></div>
                     </div>
                 </div>
                 <div className='second'>
-                    <h4>Contact Us</h4>
-                    <div className='loc'>
-                        <img src="/images/components/ficon1.svg" alt="img" />
-                        <p>
-                            7, Bailey Street, Off Oguntolu Street,<br /> Shomolu, Lagos.
-                        </p>
-                    </div>
-                    <div className='mail'>
-                        <img src="/images/components/mail.svg" alt="img" />
-                        <p>
-                            trinitypactlimited@gmail.com
+                    <h4>COMPANY</h4>
+                    <p> About Us </p>
+                    <p>Ambassadors</p>
+                    <p>Acceptable Use Policy</p>
+                    <p>Referral Policy</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>FAQ</p>
+                </div>
+                <div className='third'>
+                    <h4>NEED HELP?</h4>
+                    <p>Support@Tippifynow.com</p>
 
-                        </p>
+                    <h4 className='mt-10'>NEED HELP?</h4>
+                    <div className='soc-con flex items-center mb-4'> 
+                        <img  src="/images/components/insta.svg" alt="img" />
+                        <p className='ml-3'>Instagram</p>
                     </div>
-                    <div className='call'>
-                        <img src="/images/components/phone.svg" alt="img" />
-                        <p>+234 806 078 7963, +234 802 143 1957</p>
+                    <div className='soc-con flex items-center mb-4'> 
+                        <img  src="/images/components/x.svg" alt="img" />
+                        <p className='ml-3'>Twitter</p>
+                    </div>
+                    <div className='soc-con flex items-center mb-4'> 
+                        <img  src="/images/components/tele.svg" alt="img" />
+                        <p className='ml-3'>Telegram</p>
                     </div>
                 </div>
                 <div className='third'>
-                    <h4>WORKING HOURS</h4>
-                    <div className='links'>
-                        <p>Monday - Friday: 8:00am - 6:00pm </p> 
-                    </div>
+                    <h4>LOCATIONS</h4>
+                    <p>12, Bakare Crescent, Akiode <br/> Ojodu Berger. Lagos</p>
                 </div>
-
             </FirstRow>
             <ThirdRow>
                 <p>Copyright © {currentYear} <span>TPL Trinitypact Limited</span></p>
@@ -57,8 +62,8 @@ const Footer = () => {
 
 const Con = styled.section`  
     width: 100%;      
-    padding: 80px 90px 40px 90px;
-    background:#030303;  
+    padding: 80px 70px 40px 70px;
+    background:#030304;;  
     display: flex;
     flex-direction:column;
     align-items:center;
@@ -66,11 +71,15 @@ const Con = styled.section`
         padding: 50px 10px;
     }
     p{ 
-        color: #C3C3C3; 
-        font-size: 14px;
+        color: #FFF;
+        font-family: "Big Shoulders Display";
+        font-size: 20px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 175%; /* 28px */
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2.5px;
+        margin-bottom:20px;
+        white-space:nowrap;
         @media (max-width: 1200px) { 
             text-align: center;
         }
@@ -78,7 +87,7 @@ const Con = styled.section`
 `;
 
 const FirstRow = styled.div`  
-    width: 80%;    
+    width: 99%;    
     display: flex; 
     justify-content:space-between;  
     margin-bottom:30px;
@@ -90,8 +99,7 @@ const FirstRow = styled.div`
     @media (min-width: 1400px) {  
         width: 70%;
     }
-    .first{    
-        width: 35%;
+    .first{     
         margin-bottom:40px; 
         @media (max-width: 1200px) { 
             display: flex;
@@ -100,14 +108,15 @@ const FirstRow = styled.div`
             width: 100%;
         } 
         h4{
-            color: #F58634;  
-            font-size: 18px;
+            color: #FFF;
+            font-family: "Big Shoulders Display";
+            font-size: 25px;
             font-style: normal;
             font-weight: 700;
-            line-height: 150%; /* 27px */
-            margin-bottom:10px;
-            text-align:left;
+            line-height: normal;
+            letter-spacing: 2.5px;
             text-transform: uppercase;
+            margin-bottom:20px;
             @media (max-width: 1200px) { 
                 text-align: center;
             }
@@ -125,25 +134,19 @@ const FirstRow = styled.div`
             align-items: center;
         }
         h4{
-            color: #F58634;  
-            font-size: 18px;
+            color: #FFF;
+            font-family: "Big Shoulders Display";
+            font-size: 25px;
             font-style: normal;
             font-weight: 700;
-            line-height: 150%; /* 27px */
-            margin-bottom:10px;
+            line-height: normal;
+            letter-spacing: 2.5px;
             text-transform: uppercase;
+            margin-bottom:20px;
             @media (max-width: 1200px) { 
                 text-align: center;
             }
-        }
-        div{
-            display:flex;
-            margin-bottom:10px;
-            align-items:center;
-            img{
-                margin-right:10px;
-            }
-        }
+        } 
     }
     .third{  
         display:flex;
@@ -153,41 +156,25 @@ const FirstRow = styled.div`
             align-items: center;
         }
         h4{
-            color: #F58634;  
-            font-size: 18px;
+            color: #FFF;
+            font-family: "Big Shoulders Display";
+            font-size: 25px;
             font-style: normal;
             font-weight: 700;
-            line-height: 150%; /* 27px */
-            margin-bottom:10px;
-            text-align:left;
+            line-height: normal;
+            letter-spacing: 2.5px;
             text-transform: uppercase;
+            margin-bottom:20px;
             @media (max-width: 1200px) { 
                 text-align: center;
             }
         }
-        .links{ 
+        .soc-con{
             p{
-                margin-bottom:10px; 
-                text-align:left;
-                @media (max-width: 1200px) { 
-                    text-align: center;
-                }
-            }
-            div{
-                display:flex;
-                align-items:center;
-                img{
-                    margin-left:20px;
-                }
-                span{
-                    color: #D434FE; 
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                }
+                margin-bottom:0;
             }
         }
+        
     }
     
 `;
