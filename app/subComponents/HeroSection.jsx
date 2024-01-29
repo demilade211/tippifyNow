@@ -4,39 +4,39 @@ import React from 'react'
 import styled from 'styled-components';
 
 const HeroSection = () => {
-    return (
-        <Con>
-            <Left>
-                <h1 className='mb-8'>Tippify, Your Gateway<br /> to Effortless Tipping</h1>
-                <p className='sub mb-8'>
-                    Elevate your tipping experience with Tippify - the app
-                    designed to redefine how you send and receive tips. Discover
-                    a world where transactions are not just transactions;
-                    they're moments of connection, appreciation, and support.
-                </p>
-                <div className='flex mb-8'>
-                    <div className='mr-5'>
-                        <img className="" src="/images/pages/home/ps.png" alt="img" />
-                    </div>
-                    <div>
-                        <img className="" src="/images/pages/home/as.png" alt="img" />
-                    </div>
-                </div>
-                <div className='comm-con flex items-center mb-8'>
-                    <div className='left mr-3'>
-                        <h2>Join</h2>
-                        <p>Our Community</p>
-                    </div>
-                    <div>
-                        <img className="" src="/images/pages/home/comm.png" alt="img" />
-                    </div>
-                </div>
-            </Left>
-            <Right>
-                <img className="mt-5" src="/images/pages/home/rightImg.png" alt="img" />
-            </Right>
-        </Con>
-    )
+  return (
+    <Con>
+      <Left>
+        <h1 className='mb-8'>Tippify, Your Gateway<br /> to Effortless Tipping</h1>
+        <p className='sub mb-8'>
+          Elevate your tipping experience with Tippify - the app
+          designed to redefine how you send and receive tips. Discover
+          a world where transactions are not just transactions;
+          they're moments of connection, appreciation, and support.
+        </p>
+        <div className='flex mb-8'>
+          <div className='mr-5'>
+            <img className="" src="/images/pages/home/ps.png" alt="img" />
+          </div>
+          <div>
+            <img className="" src="/images/pages/home/as.png" alt="img" />
+          </div>
+        </div>
+        <div className='comm-con flex items-center mb-8'>
+          <div className='left mr-3'>
+            <h2>Join</h2>
+            <p>Our Community</p>
+          </div>
+          <div>
+            <img className="" src="/images/pages/home/comm.png" alt="img" />
+          </div>
+        </div>
+      </Left>
+      <Right>
+        <img className="mt-5" src="/images/pages/home/rightImg.png" alt="img" />
+      </Right>
+    </Con>
+  )
 }
 
 const Con = styled.section`  

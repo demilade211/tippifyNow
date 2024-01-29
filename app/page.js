@@ -3,12 +3,14 @@
 import styled from 'styled-components';
 import AppLayout from '@/layouts/AppLayout';
 import HeroSection from './subComponents/HeroSection';
+import Why from './subComponents/Why';
 
 const Home = () => {
   return (
     <AppLayout>
       <Con>
         <HeroSection />
+        <Why/>
       </Con>
     </AppLayout>
   )
