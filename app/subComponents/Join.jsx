@@ -37,11 +37,11 @@ const Con = styled.section`
         background: rgba(255, 255, 255, 0.30); 
         backdrop-filter: blur(50px);
         padding: 21px 0px 21px 135px;
-        display: flex;
+        display: flex; 
         @media (max-width: 1200px) { 
             flex-direction: column-reverse;
             height: auto;
-            padding: 30px;
+            padding: 0px;
         }
     }
 `;
