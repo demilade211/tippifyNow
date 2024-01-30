@@ -53,8 +53,7 @@ const Why = () => {
 const Con = styled.section`  
   width: 100%;  
   display: flex;
-  background: #FFF;
-  border: 1px solid black;
+  background: #FFF; 
   padding: 50px 90px;
   overflow: hidden;
   @media (max-width: 1200px) { 

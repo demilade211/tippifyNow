@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import AppLayout from '@/layouts/AppLayout';
 import HeroSection from './subComponents/HeroSection';
 import Why from './subComponents/Why';
+import Features from './subComponents/Features';
+import Join from './subComponents/Join';
+import Testimonials from './subComponents/Testimonials';
 
 const Home = () => {
   return (
@@ -11,6 +14,9 @@ const Home = () => {
       <Con>
         <HeroSection />
         <Why/>
+        <Features/>
+        <Join/>
+        <Testimonials/>
       </Con>
     </AppLayout>
   )
