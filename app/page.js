@@ -7,6 +7,7 @@ import Why from './subComponents/Why';
 import Features from './subComponents/Features';
 import Join from './subComponents/Join';
 import Testimonials from './subComponents/Testimonials';
+import Download from './subComponents/Download';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Features/>
         <Join/>
         <Testimonials/>
+        <Download/>
       </Con>
     </AppLayout>
   )

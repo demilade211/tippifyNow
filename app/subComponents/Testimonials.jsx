@@ -172,7 +172,8 @@ const Right = styled.div`
         line-height: normal;
       }
     }
-  }
+  } 
+
 `;
 
 export default Testimonials
