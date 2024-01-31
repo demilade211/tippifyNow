@@ -53,9 +53,9 @@ const Footer = () => {
                     <p>12, Bakare Crescent, Akiode <br/> Ojodu Berger. Lagos</p>
                 </div>
             </FirstRow>
-            <ThirdRow>
+            {/* <ThirdRow>
                 <p>Copyright © {currentYear} <span>TPL Trinitypact Limited</span></p>
-            </ThirdRow>
+            </ThirdRow> */}
         </Con>
     )
 }
@@ -82,6 +82,7 @@ const Con = styled.section`
         white-space:nowrap;
         @media (max-width: 1200px) { 
             text-align: center;
+            font-size: 14px;
         }
     }
 `;
@@ -106,6 +107,9 @@ const FirstRow = styled.div`
             flex-direction:column;
             align-items: center;
             width: 100%;
+            img{
+                height: 40px;
+            }  
         } 
         h4{
             color: #FFF;
@@ -119,12 +123,10 @@ const FirstRow = styled.div`
             margin-bottom:20px;
             @media (max-width: 1200px) { 
                 text-align: center;
+                font-size: 14px;
             }
         }
-        .logo{
-            margin-bottom:10px; 
-            width: 80%;
-        }  
+        
     }
     .second{  
         display:flex;
@@ -145,6 +147,7 @@ const FirstRow = styled.div`
             margin-bottom:20px;
             @media (max-width: 1200px) { 
                 text-align: center;
+                font-size: 14px;
             }
         } 
     }
@@ -167,6 +170,7 @@ const FirstRow = styled.div`
             margin-bottom:20px;
             @media (max-width: 1200px) { 
                 text-align: center;
+                font-size: 14px;
             }
         }
         .soc-con{

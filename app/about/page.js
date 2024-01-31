@@ -2,12 +2,19 @@
 
 import styled from 'styled-components';
 import AppLayout from '@/layouts/AppLayout';
+import Title from './subComponents/Title';
+import SecondRow from './subComponents/SecondRow';
+import ThirdRow from './subComponents/ThirdRow';
+import FourthRow from './subComponents/FourthRow';
 
 const About = () => {
   return (
     <AppLayout>
       <Con>
-
+        <Title/>
+        <SecondRow/>
+        <ThirdRow/>
+        <FourthRow/>
       </Con>
     </AppLayout>
   )

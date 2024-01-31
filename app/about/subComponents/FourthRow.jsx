@@ -1,53 +1,50 @@
 'use client'
 
-import React from 'react'
 import styled from 'styled-components';
 
-const Join = () => {
-    return (
-        <Con>
-            <div className='inner'>
-                <Left>
-                    <div className='mb-14'><img className="" src="/images/pages/home/joinIcon.svg" alt="img" /></div>
-                    <h1 className='mb-7'>Join the Tippify <br/>Revolution!</h1>
-                    <p className='sub mb-7'>
-                        Ready to transform your tipping experience?
-                        Join Tippify today and discover a world of seamless,
-                        secure, and personalized transactions.
-                    </p>
-                    <div>
-                        <BlackButton>Download Tippify</BlackButton>
-                    </div>
-
-                </Left>
-                <Right>
-                    <img className="" src="/images/pages/home/joinImg.png" alt="img" />
-                </Right>
-            </div>
-        </Con>
-    )
+const FourthRow = () => {
+  return (
+    <Con>
+      <div className='inner'>
+        <Left>
+          <h1 className='mb-7'>Our Team</h1>
+          <p className='sub mb-7'>
+            We are a resourceful team with a proven track record of building successful
+            consumer and enterprise products used by millions of customers.
+          </p>
+          <div>
+            <BlackButton>Contact the Team</BlackButton>
+          </div>
+        </Left>
+        <Right>
+          <img className="" src="/images/pages/about/people.png" alt="img" />
+        </Right>
+      </div>
+    </Con>
+  )
 }
 
-const Con = styled.section`  
-    width: 100%;   
-    padding: 30px;
-    .inner{
-        width: 100%; 
-        border-radius: 50px; 
-        background: rgba(255, 255, 255, 0.30); 
-        backdrop-filter: blur(50px);
-        padding: 21px 0px 21px 100px;
-        display: flex; 
-        @media (max-width: 1200px) { 
-            flex-direction: column-reverse;
-            height: auto;
-            padding: 0px;
-        }
+const Con = styled.div`  
+  width: 100%; 
+  padding:30px;
+  .inner{
+    padding: 80px;
+    border-radius: 50px;
+    background: #030304;
+    display: flex; 
+    @media (max-width: 1200px) { 
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px;
     }
+  } 
+  @media (max-width: 1200px) {  
+    padding: 10px;
+  } 
 `;
 
 const Left = styled.div`  
-  width: 40%;    
+  width: 50%;    
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -57,7 +54,7 @@ const Left = styled.div`
     align-items: center;
   } 
   h1{
-    color: #000;
+    color: #FFF;
     font-family: "Big Shoulders Display";
     font-size: 60px;
     font-style: normal;
@@ -69,13 +66,12 @@ const Left = styled.div`
     }
   }
   .sub{
-    color: #000;
+    color: #FFF;
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 2.2px;
     @media (max-width: 1200px) { 
         font-size: 12px;
         text-align: center;
@@ -84,8 +80,7 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`  
-  width: 60%; 
-  height: 100%; 
+  width: 50%;  
   display:flex;
   justify-content: center;
   align-items: flex-end;
@@ -93,7 +88,7 @@ const Right = styled.div`
   background-position: center center; 
   background-repeat: no-repeat;
   background-size: cover;  
-  padding: 100px 50px;
+  padding: 50px 50px;
   @media (max-width: 1200px) { 
     width:100%; 
     padding: 30px;  
@@ -107,7 +102,7 @@ const BlackButton = styled.button`
     padding: 20px 80px; 
     border:none;
     border-radius: 20px;
-    background: #000;
+    background: #61941B;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
     font-family: "Big Shoulders Display";
@@ -130,4 +125,5 @@ const BlackButton = styled.button`
     } 
 `;
 
-export default Join
+
+export default FourthRow

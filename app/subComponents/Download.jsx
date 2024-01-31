@@ -45,6 +45,7 @@ const Con = styled.section`
     background: #0B0606;  
     padding:60px 60px;
     display: flex;  
+    align-items:center;
     justify-content: space-between;
     align-items: center;
     @media (max-width: 1200px) { 
@@ -81,6 +82,7 @@ const Left = styled.div`
 const Right = styled.div`    
   width:40% ;
   display:flex;
+  justify-content: center;
   flex-direction: column; 
   background: url('/images/pages/home/bg.svg');
   background-position: center center; 

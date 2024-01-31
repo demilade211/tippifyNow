@@ -32,14 +32,13 @@ const Navbar = () => {
                 </div>
                 <div className={`mobile-nav ${showNav && "active"}`}>
                     <div className="close" onClick={() => setShowNav(false)} >
-                        <img src="/images/components/close.svg" alt="img" onClick={() => setShowNav(!showNav)} />
+                        <img src="/images/components/ham.svg" alt="img" onClick={() => setShowNav(!showNav)} />
                     </div>
                     <ul>
                         <li onClick={() => router.push(`/`)}>Home</li>
-                        <li onClick={() => router.push(`/about`)}>About</li>
-                        <li onClick={() => router.push(`/services`)}>Services</li>
-                        <li onClick={() => router.push(`/projects`)}>Projects</li>
-                        <li onClick={() => router.push(`/contact`)}>Contact</li>
+                        <li onClick={() => router.push(`/products`)}>Products</li>
+                        <li onClick={() => router.push(`/about`)}>About us</li>
+                        <li onClick={() => router.push(`/faq`)}>FAQ</li> 
                         {/* <li className="flex items-center">
                             <img className="mr-5 cursor-pointer" src="/images/components/insta.svg" alt="img" />
                             <img className="mr-5 cursor-pointer" src="/images/components/twit.svg" alt="img" />
@@ -131,7 +130,7 @@ const Bottom = styled.div`
         left: 0;
         display: block; /* Change to 'none' when you want to hide it */ 
         border: 0.5px solid rgba(255, 255, 255, 0.04);
-        background:#E7E7E7;
+        background:#030304;
         padding: 20px 50px;
         opacity: 0; /* Start fully transparent */
         transition: 900ms ease-in;

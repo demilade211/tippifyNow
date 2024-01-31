@@ -72,8 +72,8 @@ const Con = styled.section`
 `;
 
 const Left = styled.div`  
-  width: 40%;    
-  padding-left: 30px;
+  width: 45%;    
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -110,7 +110,7 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`  
-  width: 60%; 
+  width: 55%; 
   height: 100%; 
   display:flex; 
   background: url('/images/pages/home/bg.svg');
