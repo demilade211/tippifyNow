@@ -70,8 +70,7 @@ const Con = styled.div`
   width: 100%; 
   padding:70px;  
   @media (max-width: 1200px) {  
-    padding: 30px;
-    height:40vh ;
+    padding: 30px; 
   }   
 `;
 
