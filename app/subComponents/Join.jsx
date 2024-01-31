@@ -9,7 +9,7 @@ const Join = () => {
             <div className='inner'>
                 <Left>
                     <div className='mb-14'><img className="" src="/images/pages/home/joinIcon.svg" alt="img" /></div>
-                    <h1 className='mb-7'>Join the Tippify <br/>Revolution!</h1>
+                    <h1 className='mb-7'>Join the Tippify <br />Revolution!</h1>
                     <p className='sub mb-7'>
                         Ready to transform your tipping experience?
                         Join Tippify today and discover a world of seamless,
@@ -31,6 +31,8 @@ const Join = () => {
 const Con = styled.section`  
     width: 100%;   
     padding: 30px;
+    background: url('/images/pages/home/jbg.png') center no-repeat;
+    background-size: cover; 
     .inner{
         width: 100%; 
         border-radius: 50px; 

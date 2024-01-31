@@ -121,6 +121,8 @@ const Right = styled.div`
   border-radius: 50px 0px 0px 50px;
   background: #FFF8B6;
   overflow-x:scroll;
+  background: url('/images/pages/home/tbg.png') center no-repeat;
+  background-size: cover; 
   @media (max-width: 1200px) { 
     width:100%; 
     padding: 30px;  

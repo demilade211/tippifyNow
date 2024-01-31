@@ -42,6 +42,8 @@ const Con = styled.div`
         border-radius: 50px;
         background: #FFF8B6;
         padding: 80px 100px;
+        background: url('/images/pages/home/rbg.png') center no-repeat;
+        background-size: cover; 
         @media (max-width: 1200px) { 
             flex-direction: column-reverse;
             height: auto;

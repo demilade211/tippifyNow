@@ -48,6 +48,8 @@ const Con = styled.section`
     align-items:center;
     justify-content: space-between;
     align-items: center;
+    background: url('/images/pages/home/dbg.png') center no-repeat;
+    background-size: cover; 
     @media (max-width: 1200px) { 
       flex-direction: column;
       min-height: auto;
@@ -83,11 +85,7 @@ const Right = styled.div`
   width:40% ;
   display:flex;
   justify-content: center;
-  flex-direction: column; 
-  background: url('/images/pages/home/bg.svg');
-  background-position: center center; 
-  background-repeat: no-repeat;
-  background-size: cover; 
+  flex-direction: column;  
   @media (max-width: 1200px) { 
     width:100%; 
     padding: 30px; 

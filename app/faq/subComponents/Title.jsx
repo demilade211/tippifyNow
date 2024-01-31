@@ -3,16 +3,15 @@
 import styled from 'styled-components';
 
 const Title = () => {
-  return (
-    <Con>
-      <div>
-        <h1>About us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          fringilla sodales convallis non, dictum nec lorem.
-        </p>
-      </div>
-    </Con>
-  )
+    return (
+        <Con>
+            <div>
+                <h1 className='pc'>Frequently Asked <br/>Questions</h1>
+                <h1 className='mobile'>FAQ</h1>
+                <p>Having Problems? Contact us. </p>
+            </div>
+        </Con>
+    )
 }
 
 const Con = styled.div`  
@@ -23,12 +22,23 @@ const Con = styled.div`
   display: flex;
   align-items: flex-end;
   margin-bottom:30px;
-  background: url('/images/pages/about/abg.png') center no-repeat;
-  background-size: cover;  
+  background: url('/images/pages/faq/fbg.png') center no-repeat;
+  background-size: cover; 
   @media (max-width: 1200px) {  
     padding: 30px;
     height:40vh ;
   } 
+  .mobile{
+    display: none;
+    @media (max-width: 1200px) {  
+      display: flex;
+    } 
+  }
+  .pc{ 
+    @media (max-width: 1200px) {  
+      display: none;
+    } 
+  }
   h1{
     color: #457D58;
     font-family: "Big Shoulders Display";
